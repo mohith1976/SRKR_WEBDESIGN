@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="MCR Web Solutions, SRKR Engineering College">
+      <meta name="keywords" content="SRKR Engineering College, Sagi Rama Krishnam Raju Engineering College, Bhimavaram, SRKR, SRKREC, Chinna Amiram, Bhimavaram Engineering College, NIRF Rank College">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+      <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+      <link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+      <link rel="stylesheet" href="assets/css/vanillabox/vanillabox.css" type="text/css">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+      
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>SRKR Engineering College - Bhimavaram</title>
+      <style>
+         /* anouncements*/
+         /* Reset and Font Styles */
+
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: space-between; /* Space sections evenly */
+}
+
+/* Announcements Section */
+.announcements {
+    flex: 1;
+    background: #ffffff; /* White background for clean look */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    overflow: hidden;
+    position: relative;
+    color: #ffffff; /* White text for contrast */
+}
+
+.announcements-header {
+    background-color: #152c52; /* Deep blue header */
+    color: #fcfcfc; /* White text for header */
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3rem; /* Slightly larger font size */
+    letter-spacing: 1px; /* Letter spacing for modern style */
+    
+    text-transform: uppercase; /* Professional uppercase header */
+}
+
+.announcements-content {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 15px; /* Padding for better layout */
+}
+
+.announcement-marquee {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-vertical 10s linear infinite;
+    gap: 10px; /* Space between announcement items */
+}
+
+.announcement-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for contrast */
+    padding: 10px 15px;
+   
+    font-size: 1.2rem; /* Readable font size */
+    line-height: 1.2; /* Line height for better readability */
+    color: #152c52; /* Dark blue text for readability */
+    font-weight: 500; /* Medium font weight for elegance */
+    white-space: pre-line; /* Respect line breaks in text */
+    border-bottom: 0.7px solid #152c52; /* Add a thin line below each announcement */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Remove the bottom border for the last item */
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for announcement items */
+.announcement-item:hover {
+    
+    transform: scale(1.02); /* Slight zoom effect */
+    
+}
+
+/* Vertical Scrolling Animation */
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Spotlight Section */
+.spotlight {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.spotlight-header {
+    background-color: #152c52;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.spotlight-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Achievements Section */
+.achievements {
+    flex: 1;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 300px; /* Section height */
+    overflow: hidden; /* Hide overflow outside section */
+    position: relative;
+}
+
+/* Marquee Container */
+.achievement-marquee {
+    display: flex; /* Flex for horizontal layout */
+    align-items: center; /* Center cards vertically */
+    animation: scroll-horizontal 15s linear infinite; /* Smooth horizontal scrolling */
+    gap: 20px; /* Spacing between cards */
+    width: 100%; /* Ensure full-width scrolling */
+}
+
+/* Individual Achievement Cards */
+.achievement-item {
+    flex: 0 0 250px; /* Fixed width for each card */
+    height: 180px; /* Fixed height for each card */
+    background: linear-gradient(135deg, #142C52, #2B4A7D); /* Gradient background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    display: flex; /* Flexbox for card content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-weight: bold; /* Bold typography */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 1.1rem; /* Readable text size */
+   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    padding: 10px; /* Add padding for better text spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+}
+
+/* Hover Effect on Cards */
+.achievement-item:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Horizontal Scrolling Animation */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Fix Marquee Animation on Hover */
+.achievement-marquee:hover {
+    animation-play-state: running; /* Keep animation running */
+}
+
+      </style>
+      <style>
+         /* clg video*/
+         .outer-frame1 {
+            width: 100%; /* Full width for responsiveness */
+            height: 500px; /* Increased height */
+            background: url('https://assets.thehansindia.com/h-upload/feeds/2019/03/23/155967-srkr.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        /* Background overlay */
+        .outer-frame1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Darker overlay */
+            
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 20px;
+            color: #ffffff;
+           
+            box-sizing: border-box;
+            position: relative;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .video-container {
+            flex: 6; /* Adjusted size for video */
+            padding-right: 20px;
+            margin-left: 5%;
+            margin-bottom: 20px; /* For mobile screens */
+            max-width: 100%;
+        }
+
+        iframe {
+            width: 100%; /* 100% width for responsiveness */
+            height: 400px; /* Set a specific height */
+            max-width: 1100px; /* Increased max width */
+            max-height: 700px; /* Increased max height */
+            border-radius: 10px;
+            
+        }
+
+        .text-container {
+            flex: 4; /* Adjusted for text size */
+            color:rgb(255, 255, 255);
+            max-width: 500px;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 3rem; /* Increased text size */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem; /* Increased text size */
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.7rem; /* Increased font size */
+            line-height: 1.7;
+            color:white;
+            margin-bottom: 10px;
+        }
+
+        
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .video-container {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .text-container {
+                width: 90%;
+                 /* Text container occupies more space */
+                 color:white;
+                max-width: none;
+            }
+
+            h1 {
+                font-size: 2.5rem; /* Adjust heading size */
+            }
+
+            h2 {
+                font-size: 1.8rem; /* Adjust subheading size */
+            }
+
+            p {
+                font-size: 1.2rem; /* Adjust paragraph text size */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .video-container {
+                width: 90%; /* Video adjusts to a smaller screen */
+                height: 400px; /* Increased height */
+            }
+
+            .text-container {
+                width: 90%; /* Text adjusts */
+                margin-top: 20px;
+            }
+
+            h1 {
+                font-size: 2rem; /* Smaller heading */
+            }
+
+            h2 {
+                font-size: 1.5rem; /* Smaller subheading */
+            }
+
+            p {
+                font-size: 1.1rem; /* Smaller paragraph text */
+            }
+
+            .button {
+                padding: 10px 15px; /* Adjust button size */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem; /* Further reduce heading size */
+            }
+
+            h2 {
+                font-size: 1.4rem; /* Further reduce subheading size */
+            }
+
+            p {
+                font-size: 1rem; /* Further reduce paragraph text size */
+            }
+
+            .button {
+                font-size: 0.9rem; /* Smaller button text */
+                padding: 8px 12px; /* Adjust button size */
+            }
+        }
+      </style>
+      <style>
+         .program-section {
+         padding: 20px;
+         }
+         .program-card {
+         background-color: #fdf4d4;
+         border: 1px solid #ddd;
+         border-radius: 8px;
+         padding: 15px;
+         text-align: center;
+         transition: transform 0.3s, box-shadow 0.3s;
+         }
+         .program-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+         }
+         .program-card img {
+         max-width: 80px;
+         margin-bottom: 10px;
+         }
+         .program-card b {
+         display: block;
+         font-size: 14px;
+         color: #000;
+         }
+         .program-card font {
+         display: block;
+         font-size: 12px;
+         color: #555;
+         }
+         h2.section-title {
+         font-size: 20px;
+         font-weight: bold;
+         margin-bottom: 20px;
+         }
+      </style>
+      <style>
+         .cp
+         {
+         background-color:#0089E4;
+         color:#ffffff;
+         float:right;
+         padding:5px 60px 5px 60px;
+         }
+      </style>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11166627936"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'AW-11166627936');
+      </script>
+      <script>
+         gtag('config', 'AW-11166627936/OeJICO-KibIZEODw1Mwp', {
+           'phone_conversion_number': '9848823332'
+         });
+      </script>
+      <style>
+         .slide h2 
+         {
+         padding-top:30px;	
+         }
+         @media screen and (max-width:767px) {
+         .slide h1 {
+         font-size: 16px;
+         }
+         .slide 	h2 {
+         font-size: 16px;
+         }
+         .slide 	p {
+         font-size: 12px;
+         }
+         }
+         #counter
+         {
+         text-align: center;
+         }
+         .counter-value
+         {
+         font-family : "Oswald","Titillium Web";
+         font-weight : 700;
+         font-size: 45px;
+         position: relative;
+         color: #076593;
+         text-align: center;
+         display: inline-block;
+         margin:-10px 0px -10px 0px;
+         }
+         .plus-value 
+         {
+         font-family : "Titillium Web";
+         font-weight : 700;
+         font-size: 45px;
+         color: #076593;
+         margin:-10px 0px -10px 0px;	
+         display: inline-block;
+         }
+         #counter-text{
+         font-size: 13px;
+         }
+         #myCarousel, #myCarousel2
+         {
+         border: 2px solid #076593;
+         }
+         /* NEWS */
+         #multilines .container {
+         position: relative;
+         width: 100%;
+         }
+         #multilines ul.newsticker > li {
+         list-style: none;
+         }
+         .carousel-item img, .carousel-item iframe {
+         width: 100%;
+         height: 100%; /* Ensures the video/image fill the container */
+         }
+         /* Ensures the carousel container takes full viewport width */
+         #mediaCarousel {
+         position: relative;
+         width: 100%;
+         height: 70vh; /* Adjust height of carousel, change as necessary */
+         overflow: hidden;
+         }
+         /* Ensures full-width responsiveness */
+         .carousel-inner {
+         width: 100%;
+         height: 100%;
+         }
+         /* Optional: Adds a shadow effect on top */
+         .carousel-caption {
+         background-color: rgba(0, 0, 0, 0.5); /* Dark background for captions */
+         padding: 20px;
+         color: white;
+         }
+         /* Responsive text styles */
+         @media screen and (max-width: 767px) {
+         .carousel-caption h2, .carousel-caption p {
+         font-size: 16px;
+         }
+         }
+         /* Additional Styles */
+         #homepage-carousell {
+         background-color:#076593;
+         padding-top : 30px;
+         padding-bottom : 30px;
+         box-shadow: inset 0px -60px 0px #FFFFFF;
+         }
+         /*
+         .carousel-caption
+         {
+         background-color:#00ff00;
+         color:#FFFFFF;
+         font-size:15px;
+         width:100%;
+         padding:0px;
+         }
+         .carousel-caption h5
+         {
+         font-weight: bold;	
+         }
+         .carousel-caption p
+         {
+         color:#ffffff;
+         padding-left:10px;  	
+         }
+         */
+         #popup {
+         display:none;
+         position:absolute;
+         margin:0 auto;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         box-shadow: 0px 0px 50px 2px #000;
+         z-index:99;
+         }
+         .blink {
+         animation: blink-animation 1s steps(5, start) infinite;
+         -webkit-animation: blink-animation 1s steps(5, start) infinite;
+         }
+         @keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+         @-webkit-keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+      </style>
+      <!-- YOUTUBE CODE -->
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11166627936"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'AW-11166627936');
+      </script>
+      <script>
+         gtag('config', 'AW-11166627936/OeJICO-KibIZEODw1Mwp', {
+           'phone_conversion_number': '9848823332'
+         });
+      </script>
+      <!-- YOUTUBE CODE -->
+       <style>
+         .buttonhref{/*background: #fae01a;
+
+border: 1px solid #faf700;*/
+
+padding: 2px 0px;
+
+color: #000;
+
+font-size: 13px;
+
+text-transform: uppercase;
+
+font-family: inherit;
+
+display: block;
+
+margin: 7px 0px;
+
+width: 90%;
+
+font-weight: bold;}
+.buttonhref::before{
+content: ' ';
+height:5px;
+width:5px;
+}
+.buttonhref span{background: url(/sites/all/themes/iare/images/Web_Icons.png) -5px 38px;
+
+height: 36px;
+
+width: 40px;
+
+display: inline-block;
+
+position: relative;}
+
+.buttonhref	.bnttext{background: none !important;
+
+width: 83%;
+
+position: relative;
+
+top: 9px;font-size:11.5px;}
+
+
+</style>
+<style>
+.about-section {
+   background-color: #f9f9f9;
+   padding: 40px 20px;
+   font-family: Arial, sans-serif;
+}
+
+.about-section img {
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+   font-size: 28px;
+   color: #02335e;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.about-section p {
+   font-size: 16px;
+   color: #555;
+   line-height: 1.8;
+   text-align: justify;
+   margin-bottom: 20px;
+}
+
+.about-section .btn-primary {
+   background-color: #02335e;
+   color: #fff;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: all 0.3s ease;
+}
+
+.about-section .btn-primary:hover {
+   background-color: #021f40;
+   color: #fff;
+}
+</style>
+</head>
+   </head>
+   <body class="page-sub-page page-events-listing">
+      <!-- let's call the following div as the POPUP FRAME -->
+      <!-- <div id="popup" class="popup panel panel-primary" >
+         <img src="img/invitation.jpg" alt="popup" width='100%;' style='background-color:#ffffff;'> 
+          <div class="panel-footer" style='text-align:center;'>
+              <button id="close" class="btn btn-sm btn-primary">Close</button>
+          </div>    
+         </div> -->
+      <!-- Wrapper -->
+      <div class="wrapper">
+      <div class="footer-social" style="padding: 10px; font-size: 14px;">
+         <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
+            <!-- Image on the left -->
+            <div class="col-md-1 col-sm-1" style="display: flex; justify-content: flex-start; align-items: center;">
+            </div>
+            <!-- Text on the right -->
+            <div class="col-md-8 col-sm-8" style="text-align:right; font-size: 16px; color: blue; padding-left: 20px; padding-right: 20px;">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" style="text-align: left; border: 0px solid;">
+                  <div class="carousel-inner">
+                     <!-- Carousel content can go here -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Contact Information and Icons (right-aligned) -->
+         <div style="text-align:right; padding-top: 10px;">
+            <b>Admissions Contact:</b> <i class="fa fa-phone"></i> <a href="tel:9848823332">9848823332</a>
+         </div>
+         <div class="icons" style="text-align:right;">
+            Follow us:
+            <a href="https://www.facebook.com/SRKRECOFFICIAL" target="_new"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/srkr_engineering_college" target="_new"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/SRKR_EC" target="_new"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/c/SRKREC" target="_new"><i class="fa fa-youtube-play"></i></a>
+         </div>
+      </div>
+      <!-- /.social -->
+      <!-- Header -->
+      <div class="navigation-wrapper" >
+         <div class="secondary-navigation-wrapper">
+            <div class="container">
+               <!-- <div class="search">
+                  <div class="input-group">
+                      <input type="search" class="form-control" name="search" placeholder="Search">
+                      <span class="input-group-btn"><button type="submit" id="search-submit" class="btn"><i class="fa fa-search"></i></button></span>
+                  </div>
+                  </div>-->
+               <ul class="secondary-navigation list-unstyled">
+                  <li><span class="opacity-70"><a href="https://srkrec.edu.in/ugc.php" style='color:Yellow'><b>Approvals | Accreditations</b></a></span></li>
+                  <li>|</li>
+                  <li>EAPCET / ECET CODE : <span class="opacity-70"> SRKR</span></li>
+                  <li>|</li>
+                  <li>M.TECH CODE : <span class="opacity-70"> SRKR1</span></li>
+                  <li>|</li>
+                  <li>BBA CODE : <span class="opacity-70"> 17086</span></li>
+                  <li>|</li>
+                  <li><a href ="contactus.php"><i class="fa fa-phone"></i> Contact Us</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="primary-navigation-wrapper">
+            <header class="navbar" id="top" role="banner">
+               <div class="container">
+                  <div class="navbar-header">
+                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <div class="navbar-brand nav" id="brand">
+                        <a href="index.php"><img src="logo.png"  alt="SRKR"></a>
+                     </div>
+                  </div>
+                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                     <ul class="nav navbar-nav">
+                        <li>
+                           <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                           <a href="#" class=" has-child no-link">About SRKR</a>
+                           <ul class="list-unstyled child-navigation">
+                              <li><a href="vision_mission.php">Vision &amp; Mission</a></li>
+                              <li><a href="college_profile.php">College Profile</a></li>
+                              <li><a href="governing_body.php">Governing Body</a></li>
+                              <li><a href="advisory_council.php">College Advisory Council </a></li>
+                              <li><a href="college_committees.php">Committees</a></li>
+                              <li><a href="organogram.php">Organogram</a></li>
+                              <li><a href="president_message.php">President's Message</a></li>
+                              <li><a href="director_message.php">Director's Message</a></li>
+                              <li><a href="principal_message.php">Principal's Message</a></li>
+                              <li><a href="ugc.php">Accreditations</a></li>
+                              <li><a href="awards_honours.php">Awards &amp; Honours</a></li>
+                              <li><a href="prominent_alumni.php">Prominent Alumni</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#" class="has-child no-link">Academics</a>
+                           <ul class="list-unstyled child-navigation">
+                              <li><a href="departments.php">Departments</a></li>
+                              <li><a href="ug_courses.php">UG Programmes</a></li>
+                              <li><a href="pg_courses.php">PG Programmes</a></li>
+                              <li><a href="phd_courses.php">PhD Programmes</a></li>
+                              <li><a href="basic_english.php">BS &amp; Humanities</a></li>
+                              <li><a href="academic_calendar.php">Academic Calendar</a></li>
+                              <li><a href="syllabus.php">Syllabus</a></li>
+                              <li><a href="regulations.php">Regulations</a></li>
+                              <li><a href="timetables.php">Time Tables</a></li>
+                              <li><a href="http://www.srkrexams.in/Login.aspx" target='_blank'>Examinations</a></li>
+                              <li><a href="https://www.icredify.com/degreeverify/srkrec" target='_new'>Education Verification</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#" class="has-child no-link">Admissions</a>
+                           <ul class="list-unstyled child-navigation">
+                              <li><a href="coursesoffered.php">Programmes Offered</a></li>
+                              <li><a href="admission_procedure.php">Admission Procedure</a></li>
+                              <li><a href="intake.php">Intake &amp; Fee</a></li>
+                              <!--	<li><a href="admission_procedure.php">Admission Procedure</a></li>
+                                 <li><a href="foreign_admission.php">Foriegn Admissions</a></li>-->
+                              <li><a href="fee_payment.php">Online Fee Payment</a></li>
+                              <li><a href="eamcet_rank.php">Rank Cut-Off Details</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#" class="has-child no-link">Research</a>
+                           <ul class="list-unstyled child-navigation">
+                              <li><a href="rdteam.php">Research Advisory Committee</a></li>
+                              <li><a href="reteam.php">Research Ethics Committee</a></li>
+                              <li><a href="research_development.php">Centre for Research &amp; Development</a></li>
+                              <li><a href="rd_cycle.php">R &amp; D Cycle</a></li>
+                              <li><a href="research_centres.php">Centres of Excellence</a></li>
+                              <li><a href="research_projects.php">Research Projects</a></li>
+                              <li><a href="research_workshops.php">Workshops, Seminars &amp; Training Programmes</a></li>
+                              <!-- <li><a href="consultancy_projects.php">Consultancy Projects</a></li> -->
+                              <li><a href="research_publications.php">Scopus/WoS Publications</a></li>
+                              <li><a href="patents.php">Patents</a></li>
+                              <li><a href="phds_enrolled.php">PhD Students Enrolled</a></li>
+                              <li><a href="phds_awarded.php">PhD Degree Awarded</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#" class="has-child no-link">Amenities</a>
+                           <ul class="list-unstyled child-navigation">
+                              <li><a href="general_facilities.php">General Facilities</a></li>
+                              <li><a href = "tech.php">Technology Centre</a></li>
+                              <li><a href="digital_learningcentre.php">Digital Learning Centre</a></li>
+                              <li><a href="gcc.php">General Computer Centre</a></li>
+                              <li><a href="cfl.php">Centre for Foreign Languages</a></li>
+                              <li><a href="library.php">Library</a></li>
+                              <li><a href="hostels.php">Hostels</a></li>
+                              <li><a href="sports_infra.php">Sports and Games</a></li>
+                              <li><a href="hec.php">SRKREC – IELTS Test Centre (Pen &amp; Paper Based)</a></li>
+                              <li><a href="infrastructure.php">Infrastructure Gallery</a></li>
+                              <li><a href="language_nest.php">Extension Activities</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="placements_home.php">Placements</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </header>
+         </div>
+         <div class="background">
+            <img src="assets/img/background-city.png"  alt="background">
+         </div>
+      </div>
+      <div class="row" style='text-align:center;padding:10px;'>
+         <div class="col-md-12 col-sm-12"><img src='srkrec_full_name2.png' class='responsive' width='100%' style='max-width:1000px;'></div>
+      </div>
+      <div class="hot-news" style="background:#142C52;color:#fff">
+         <div class="container">
+            <strong>Campus Placements <font style="color:#fff">2024</font> : </strong>
+            <marquee scrollamount="3" onmouseout="this.setAttribute('scrollamount', 3, 0);this.start();" onmouseover="this.setAttribute('scrollamount', 0, 0);this.stop();" style="color:#ffffff;">
+               MICROSOFT (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ZSCALER (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               AMADEUS (5)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               TCS (16)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ZEROCODEHR (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ACCOLITE DIGITAL (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               EPAM (27)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               LUMEN (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               SEARS (7)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               VIRTUSA (5)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ARCADIS IBI (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               BYTERIDGE (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               COGNIZANT (1)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ACCENTURE (305)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               IBM (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               UST Global (35)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               CAPGEMINI (8)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               TECH MAHINDRA (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp; 
+               JBM (14)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               GREENBOX (8)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+            </marquee>
+         </div>
+      </div>
+      <div class="hot-news" style="background:#88211A;color:#fff">
+         <div class="container">
+            <strong>Campus Placements <font style="color:#fff">2024</font> : </strong>
+            <marquee scrollamount="3" onmouseout="this.setAttribute('scrollamount', 3, 0);this.start();" onmouseover="this.setAttribute('scrollamount', 0, 0);this.stop();" style="color:#ffffff;">
+               MICROSOFT (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ZSCALER (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               AMADEUS (5)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               TCS (16)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ZEROCODEHR (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ACCOLITE DIGITAL (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               EPAM (27)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               LUMEN (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               SEARS (7)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               VIRTUSA (5)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ARCADIS IBI (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               BYTERIDGE (2)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               COGNIZANT (1)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               ACCENTURE (305)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               IBM (4)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               UST Global (35)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               CAPGEMINI (8)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               TECH MAHINDRA (6)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp; 
+               JBM (14)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+               GREENBOX (8)&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+            </marquee>
+         </div>
+      </div>
+      <div id="page-content">
+         <div id="mediaCarousel" class="carousel slide" data-ride="carousel"  width='100%'  data-interval="4000" style="text-align: left; ">
+            <div class="carousel-inner">
+               <section class="" style="width:100% !important ;   background: #FFF; margin-top:9px;position: absolute; ">
+                  <div id="myCarousel" class="carousel" data-interval="3000" width='100%'; data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                     </ol>
+                     <!-- Carousel items -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <img src="1.png" alt="NIRF RANK">
+                        </div>
+                        <div class="item">
+                           <img src="2.png" alt="NAAC A++">
+                        </div>
+                        <div class="item">
+                           <img src="3.jpg" alt="NBA">
+                        </div>
+                        <div class="item">
+                           <img src="2.png" alt="IARE Holistic Approach">
+                        </div>
+                        <div class="item">
+                           <div class="carousel-caption" style="bottom:18%;left: 10%;padding-bottom:40px;"> </div>
+                           <img src="3.jpg" alt="IARE Banners">
+                        </div>
+                     </div>
+                  </div>
+                  <hr class="transition-timer-carousel-progress-bar" style="width: 0.5%;">
+               </section>
+            </div>
+         </div>
+         <br>
+         <section class="main-container">
+            <!-- Announcements Section -->
+            <div class="announcements">
+              <div class="announcements-header">Announcements</div>
+              <div class="announcements-content">
+                <div class="announcement-marquee">
+                  <div class="announcement-item">
+                    RESEARCH SCHOLARS' CONCLAVE 2024 <br> Organizing by R&D Cell "Your Pathway to Doctoral Excellence".<br> NOVEMBER 09, 2024 - TIME: 09:30 AM
+                  </div>
+                  <div class="announcement-item">
+                    Training Programme on "INTRODUCTION TO WEB DEVELOPMENT & TOOLS" <br> NOVEMBER 04th to NOVEMBER 09th, 2024.<br> For all the I-B.Tech. Students.
+                  </div>
+                  <div class="announcement-item">
+                    Training Programme on "INTRODUCTION TO WEB DEVELOPMENT & TOOLS"
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Spotlight Section -->
+            <div class="spotlight">
+              <div class="spotlight-header">Spotlight</div>
+              <img src="https://via.placeholder.com/300x200" alt="Spotlight image" class="spotlight-image">
+              <p>The economic times recognized SRKR Engineering College as Technology Transformation University-2024 Award</p>
+            </div>
+        
+            <!-- Achievements Section -->
+            <div class="achievements">
+              <div class="achievement-marquee">
+                <div class="achievement-item">
+                  <div class="achievement-title">Member of IAP - Association of Therapists</div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-title">Member of ICT Academy Technology Development</div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-title">Member of AIU - Association of Indian Universities</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          
+         <div class="block">
+            <div class="Spotlight">
+               <div class="row">
+                  
+                  <div class="row" style="overflow:hidden;clear:both; background:#fff;"> <!--0px 15px 20px 35 #FDCA0C rgba(0, 60, 113, 0.85)-->
+
+
+                     <div class="col-md-3 col-sm-3" style="padding:0px 5px 20px 20px;background: #eeeeee;height: 340px;">
+                  
+                        <h1 class="section-title" style="font-size: 22px;"><a href="?q=Research_and_Development_Center">Research &amp; Development (R&amp;D)</a></h1>
+                  
+                        <!--<a href="?q=Research_and_Development_Center" class="buttonhref" title="IARE Research and Development"><span style="background-position:224px 595px;">&nbsp;</span><span class="bnttext">Research</span></a>-->
+                  
+                        <a href="?q=pages/research-projects" class="buttonhref" title="Talent Transformation"><span style="background-position:163px 491px;">&nbsp;</span><span class="bnttext">Funded Projects</span></a>
+                  
+                        <a href="?q=pages/research-centers" class="buttonhref" title="Unique at IARE"><span style="background-position:103px 491px;">&nbsp;</span><span class="bnttext">Research Centers</span></a>
+                  
+                        <a href="?q=Industrial_Consultancy" class="buttonhref" title="Industrial Consultancy"><span style="background-position:163px 595px;">&nbsp;</span><span class="bnttext">Industry Consultancy</span></a>
+                  
+                        <a href="?q=pages/patents" class="buttonhref" title="Intellectual Property Assets"><span style="background-position:224px 595px;">&nbsp;</span><span class="bnttext">Intellectual Property Assets</span></a>
+                        
+                        <a href="https://iare.irins.org/" class="buttonhref" title="IARE - Research Information"><span style="background-position:224px 595px;">&nbsp;</span><span class="bnttext">IARE - Research Information</span></a>
+                     </div>
+                  
+                     <div class="col-md-3 col-sm-3" style="padding:0px 15px 20px 10px;background: #f5f5f5;height: 340px;">
+                  
+                        <h1 class="section-title" style="font-size: 22px;"><a href="?q=Technology_Incubation_Incubation_Centre">Innovation &amp;<br>Creativity</a></h1>
+                  
+                        <a href="?q=Technology_Incubation_Incubation_Centre" class="buttonhref" title="Technology Innovation and Incubation Centre (TIIC)"><span style="background-position:103px 595px;">&nbsp;</span><span class="bnttext">Technology Incubation</span></a>
+                  
+                        <a href="?q=TBI_MSME_ASPIRE" class="buttonhref" title="TBI MSME ASPIRE"><span style="background-position:43px 595px;">&nbsp;</span><span class="bnttext">MSME ASPIRE - TBI</span></a>
+                  
+                        <a href="?q=pages/community-innovation" class="buttonhref" title="Community Innovation"><span style="background-position:103px 491px;">&nbsp;</span><span class="bnttext">Community Innovation</span></a>
+                  
+                        <a href="?q=basicpage/institution’s-innovation-council-iic" class="buttonhref" title="IARE Certifications On Campus" tabindex="0"><span style="background-position:224px 542px;">&nbsp;</span><span class="bnttext">Institution Innovation Council</span></a>
+                  
+                        <a href="?q=pages/nisp" class="buttonhref" title="National Innovation &amp; Start-Up Policy" tabindex="0"><span style="background-position:224px 542px;">&nbsp;</span><span class="bnttext">Innovation &amp; Start-Up Policy</span></a>
+                  
+                     </div>
+                  
+                     <div class="col-md-3 col-sm-3" style="padding:0px 15px 20px 10px;background: #eeeeee;height: 340px;">
+                  
+                        <h1 class="section-title" style="font-size: 22px;">Start-Up &amp; Entrepreneurship</h1>	
+                  
+                        <a href="?q=basicpage/student-start-and-innovation" class="buttonhref" title="IARE Start-Up Park"><span style="background-position:224px 542px;">&nbsp;</span><span class="bnttext">Start-Up Park</span></a>
+                  
+                        <a href="?q=entrepreneurship" class="buttonhref" title="Entrepreneurship"><span style="background-position: 43px 491px;">&nbsp;</span><span class="bnttext">Entrepreneurship</span></a>
+                  
+                        <a href="?q=pages/collaborations" class="buttonhref" title="Collaborations"><span style="background-position:103px 542px;">&nbsp;</span><span class="bnttext">MOU's / Collaborations</span></a>
+                  
+                        <!--<a href="?q=pages/faculty-exchange-programs" class="buttonhref" title="IARE Faculty Exchange Programs"><span style="background-position:163px 542px;">&nbsp;</span><span class="bnttext">Faculty Exchange</span></a>-->
+                  
+                        <a href="https://www.iare.ac.in/?q=pages/yukti-innovation-repository" class="buttonhref" title="Yukti - Innovation Repository"><span style="background-position:103px 542px;">&nbsp;</span><span class="bnttext">Yukti - Innovation Repository</span></a>
+                        <a href="https://www.iare.ac.in/?q=pages/atl-school-linkage" class="buttonhref" title="ATL School Linkage"><span style="background-position:163px 491px;">&nbsp;</span><span class="bnttext">ATL School Linkage</span></a>
+                        
+                     
+                     </div>
+                  
+                     <div class="col-md-3 col-sm-3" style="padding:0px 20px 20px 10px;background: #f5f5f5;height: 340px;">
+                  
+                        <h1 class="section-title" style="font-size: 22px;">Industry Institute Interface</h1>
+                  
+                        <a href="?q=pages/industry-institute-partnership-cell" class="buttonhref" title=""><span style="background-position:163px 542px;">&nbsp;</span><span class="bnttext">Institute Industry Partnership</span></a>
+                  
+                        <a href="?q=pages/internships" class="buttonhref" title="Internships / Field Projects"><span style="background-position:163px 595px;">&nbsp;</span><span class="bnttext">Internships / Field Projects</span></a>
+                  
+                        <a href="?q=pages/academic-collaborations" class="buttonhref" title="Academic MOU's"><span style="background-position:103px -57px;">&nbsp;</span><span class="bnttext">Industry &amp; Academic MOU's</span></a>
+                  
+                        <a href="?q=pages/professional-society-chapters" class="buttonhref" title="Professional Society"><span style="background-position:224px 542px;">&nbsp;</span><span class="bnttext">Professional Networking<!--Society Chapters--></span></a>
+                  
+                        <a href="?q=virtusa-center-excellence" class="buttonhref" title="Center of Excellence"><span style="background-position:224px 542px;">&nbsp;</span><span class="bnttext">Center of Excellence (CoE)</span></a>
+                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="about-section" style="background-color: #f9f9f9; padding: 40px 20px; font-family: Arial, sans-serif;">
+            <div class="container" style="max-width: 1200px; margin: 0 auto;">
+                <div class="row">
+                    <!-- Image Section -->
+                    <div class="col-md-6" style="padding: 10px;">
+                        <img src="https://via.placeholder.com/500x300" alt="College Campus" style="width: 100%; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                    </div>
+        
+                    <!-- Text Section -->
+                    <div class="col-md-6" style="padding: 10px;">
+                        <h1 style="font-size: 28px; color: #02335e; font-weight: bold; margin-bottom: 15px;">About Our College</h1>
+                        <p style="font-size: 16px; color: #555; line-height: 1.8; text-align: justify; margin-bottom: 20px;">
+                            Established in the heart of the city, our college has been a beacon of academic excellence and innovation for over a decade. With a sprawling campus equipped with state-of-the-art infrastructure, we provide a nurturing environment that fosters learning, creativity, and holistic development.
+                        </p>
+                        <p style="font-size: 16px; color: #555; line-height: 1.8; text-align: justify; margin-bottom: 20px;">
+                            Our students have consistently excelled in academics, placements, and extracurricular activities, making us one of the most sought-after institutions in the region. From cutting-edge research facilities to vibrant student life, we offer an unparalleled educational experience.
+                        </p>
+                        <a href="about-us.html" class="btn btn-primary" style="background-color: #02335e; color: #fff; padding: 10px 20px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Divisions, Connect -->
+         <div class="container program-section">
+            <div class="row">
+               <div class="col-12 col-md-10 text-center">
+                  <h2 class="section-title">UG Program (B.Tech)</h2>
+               </div>
+               <div class="col-12 col-md-2 text-center">
+                  <h2 class="section-title">PG Programs</h2>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="cse.png" alt="Computer Science and Engineering">
+                     <a href="https://srkrec.edu.in/csbs.php"><b>COMPUTER SCIENCE AND ENGINEERING</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="cse_AIML.png" alt="Artificial Intelligence and Machine Learning">
+                     <a href="https://srkrec.edu.in/csbs.php"><b>COMPUTER SCIENCE AND ENGINEERING</b></a>
+                     <font>(AIML)</font>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="cse_DS.png" alt="Data Science">
+                     <a href="https://srkrec.edu.in/csbs.php"><b>COMPUTER SCIENCE AND ENGINEERING</b></a>
+                     <font>(Data Science)</font>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="cse_CS.png" alt="Cyber Security">
+                     <a href="https://srkrec.edu.in/csbs.php"><b>COMPUTER SCIENCE AND ENGINEERING</b></a>
+                     <font>(Cyber Security)</font>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="IT.png" alt="Information Technology">
+                     <a href="https://srkrec.edu.in/it.php"><b>INFORMATION TECHNOLOGY</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="CSIT.png" alt="Master of Technology">
+                     <a href="https://srkrec.edu.in/it.php"><b>COMPUTER SCIENCE AND INFORMATION TECHNOLOGY</b></a>
+                  </div>
+               </div>
+            </div>
+            <div class="row g-4 mt-4">
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="ECE.png" alt="Electronics and Communication Engineering">
+                     <a href="https://srkrec.edu.in/ece.php"><b>ELECTRONICS AND COMMUNICATION ENGINEERING</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="cse.png" alt="Electronics and Communication Engineering">
+                     <a href="https://srkrec.edu.in/it.php"><b>COMPUTER SCIENCE AND DESIGN</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="EEE.png" alt="Electrical and Electronics Engineering">
+                     <a href="https://srkrec.edu.in/eee.php"><b>ELECTRICAL AND ELECTRONICS ENGINEERING</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="Mech.png" alt="Mechanical Engineering">
+                     <a href="https://srkrec.edu.in/mech.php"><b>MECHANICAL ENGINEERING</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="civil.png" alt="Civil Engineering">
+                     <a href="https://srkrec.edu.in/civil.php"><b>CIVIL ENGINEERING</b></a>
+                  </div>
+               </div>
+               <div class="col-6 col-md-4 col-lg-2">
+                  <div class="program-card">
+                     <img src="MBA.png" alt="Master of Business Administration">
+                     <b>MASTER OF BUSINESS ADMINISTRATION</b>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider-area">
+            <div class="hero-slider owl-carousel">
+               <!--Single Slider Start-->
+               <div
+                  class="single-slider"
+                  style="background-image: url(img/slider/image.svg)"
+                  >
+               </div>
+               <div
+                  class="single-slider"
+                  style="background-image: url(img/slider/carousal1.jpg)"
+                  >
+               </div>
+               <div
+                  class="single-slider"
+                  style="background-image: url(img/slider/carousal3.jpg)"
+                  >
+               </div>
+               <div
+                  class="single-slider"
+                  style="background-image: url(img/slider/carousal2.jpg)"
+                  >
+               </div>
+               <!--Single Slider End-->
+               <!--Single Slider Start-->
+               <div
+                  class="single-slider"
+                  style="background-image: url(img/slider/2.jpg)"
+                  >
+               </div>
+               <!--Single Slider End-->
+            </div>
+         </div>
+         <div class="block">
+            <div class="container">
+               <div class="block-dark-background">
+                  <div class="row">
+                     <div class="col-md-2 col-sm-2"><a href='web_mail.php' style="color:#ffffff;"><i class="fa fa-envelope" aria-hidden="true"></i> SRKREC WEB MAIL</a></div>
+                     <div class="col-md-3 col-sm-3"><a href='http://www.srkrexams.in' style="color:#ffff00;"><i class="fa fa-bullhorn" aria-hidden="true" target='_blank'></i> EXAMINATIONS</a></div>
+                     <div class="col-md-3 col-sm-3"><b><a href='alumni.php' style="color:#ffffFF;"><i class="fa fa-group" aria-hidden="true" target='_blank'></i> ALUMNI ASSOCIATION</a></b></div>
+                     <!--    <div class="col-md-2 col-sm-2"><a href='holidays.php' style="color:#ffffff;"><i class="fa fa-calendar" aria-hidden="true"></i> List of Holidays</a></div> -->
+                     <!--                <div class="col-md-2 col-sm-2"><a href='research_projects.php' style="color:#ffffff;"><i class="fa fa-money" aria-hidden="true"></i> Funded Projects</a></div> -->
+                     <div class="col-md-3 col-sm-3"><b><a href='edu_verification.php' style="color:#FFFFFF;"><i class="fa fa-search" aria-hidden="true"></i> EDUCATION VERIFICATION</a></b></div>
+                  </div>
+                  <!-- /.row -->
+                  <!--          <div class="row">
+                     <div class="col-md-12 col-sm-12" style='text-align:center;font-size:14px;'><br><b><a href='2_4_online_instructions.pdf' style="color:#FFFF00;" target='_new'><i class="fa fa-laptop" aria-hidden="true"></i> INSTRCUTIONS FOR 2/4 B.TECH ONLINE CLASSES</a></b></div>
+                              </div>
+                     -->			
+                  <!--            <div class="row">
+                     <div class="col-md-3 col-sm-3"><a href='#' style="color:#ffffff;"><i class="fa fa-globe" aria-hidden="true"></i> International Partnerships</a></div>
+                     <div class="col-md-2 col-sm-2"><a href='#' style="color:#ffffff;"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Start-Up Companies</a></div>
+                     <div class="col-md-2 col-sm-2"><a href='holidays.php' style="color:#ffffff;"><i class="fa fa-trophy" aria-hidden="true"></i> Awards / Ranks</a></div>
+                     <div class="col-md-2 col-sm-2"><a href='#' style="color:#ffffff;"><i class="fa fa-download" aria-hidden="true"></i> Downloads</a></div>
+                     <div class="col-md-3 col-sm-3"><a href='#' style="color:#ffffff;"><i class="fa fa-sitemap" aria-hidden="true"></i> Centres of Excellence</a></div>
+                     </div><!-- /.row -->
+               </div>
+               <!-- /.block-dark-background -->
+            </div>
+            <!-- /.container -->
+         </div>
+         <!-- end Divisions, Connect -->
+         <section id="count-down">
+            <div class="block">
+               <div class="container" style="background-color:#F5F5F5">
+                  <header class="center">
+                     <h2>SRKREC at a Glance</h2>
+                  </header>
+                  <div class="row">
+                     <div id="counter">
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Established in</b><br></span>						
+                           <div class="counter-value" data-count="1980">0</div>
+                           <span class="center font-color-dark" id="counter-text"><br>44 Years of Academic Excellence.</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Produced</b><br></span>						
+                           <div class="counter-value" data-count="25">0</div>
+                           <span class="plus-value">K+</span>
+                           <span class="center font-color-dark" id="counter-text"><br>World Class Graduates.</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>NAAC 'A+' Grade</b><br></span>						
+                           <div class="counter-value" data-count="3.42">0</div>
+                           <span class="plus-value">/4</span>
+                           <span class="center font-color-dark" id="counter-text"><br>NAAC Cycle - II</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Faculty with PhD</b><br></span>						
+                           <div class="counter-value" data-count="130">0</div>
+                           <span class="plus-value">+</span>
+                           <span class="center font-color-dark" id="counter-text"><br>150+ Members are Pursuing PhD</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Funded Projects</b><br></span>
+                           <div class="counter-value" data-count="22">0</div>
+                           <span class="plus-value">Cr</span>
+                           <span class="center font-color-dark" id="counter-desc"><br>By DST, AICTE, UGC &amp; Foreign Universities</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase" id="counter-text" style="color:#EA6645;font-weight:bold;"><u>Placement Meter</u><br></span>						
+                           <div class="counter-value" data-count="1222" style="color:#EA6645;">0</div>
+                           <span class="center font-color-dark" id="counter-text"><br>Offers So far for 2023-24 Batch.</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div id="counter">
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Total Faculty</b><br></span>						
+                           <div class="counter-value" data-count="400">0</div>
+                           <span class="plus-value">+</span>
+                           <span class="center font-color-dark" id="counter-desc"><br>Dedicated &amp; Experienced Faculty</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Published</b><br></span>						
+                           <div class="counter-value" data-count="2394">0</div>
+                           <span class="center font-color-dark" id="counter-text"><br>Journal / Conference Papers</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Formed</b><br></span>						
+                           <div class="counter-value" data-count="64">0</div>
+                           <span class="plus-value">+</span>
+                           <span class="center font-color-dark" id="counter-desc"><br>MOUs &amp; Collaborations</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Published</b><br></span>						
+                           <div class="counter-value" data-count="110">0</div>
+                           <span class="plus-value"></span>
+                           <span class="center font-color-dark" id="counter-text"><br>Patents Filed/Published</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Supporting</b><br></span>
+                           <div class="counter-value" data-count="16">0</div>
+                           <span class="center font-color-dark" id="counter-desc"><br>Start-ups by SRKREC Students &amp; Faculty</span>
+                           <hr>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                           <span class="center font-uppercase font-color-dark" id="counter-text"><b>Established</b><br></span>
+                           <div class="counter-value" data-count="14">0</div>
+                           <span class="center font-color-dark" id="counter-text"><br>Centres of Excellence in Campus</span>
+                           <hr>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="background"></div>
+               <!-- /.background -->
+            </div>
+         </section>
+         <div class="outer-frame1">
+            <div class="content">
+                <!-- Video Section -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/mMejQJX731k?referrer=https://srkrec.edu.in/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+    
+                <!-- Text Section -->
+                <div class="text-container">
+                    <h1>SRKR Engineering College</h1>
+                    <br>
+                    <h2>Brand of Academic Excellence</h2>
+                    <br>
+                    <p>
+                        Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants.
+                    </p>
+                </div>
+            </div>
+        </div>
+         <div class="block">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 col-sm-8">
+                     <section id="academic-life">
+                        <header>
+                           <h2>Quick Links</h2>
+                        </header>
+                        <div class="section-content">
+                           <section id="course-tabs">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs course-detail-tabs">
+                                 <li class="active"><a href="#tab-a" data-toggle="tab">Skill Development @ SRKREC</a></li>
+                                 <li><a href="#tab-b" data-toggle="tab">Centres of Excellence</a></li>
+                                 <li><a href="#tab-c" data-toggle="tab">Departments</a></li>
+                                 <!-- <li><a href="#tab-d" data-toggle="tab">Information Zone</a></li>-->
+                              </ul>
+                              <!-- /.course-detail-tabs -->
+                              <!-- Tab panes -->
+                              <div class="tab-content course-tab-content">
+                                 <div class="tab-pane fade in active" id="tab-a">
+                                    <section>
+                                       <article>
+                                       <div class="table-responsive">
+                                          <table class="table table-hover course-list-table">
+                                             <tbody>
+                                                <tr>
+                                                   <th class="course-title2"><a href="apcmskill_ec.php">AP CM Skill Excellence Centre</a></th>
+                                                   <th class="course-title2">
+                                                      <a href="iitbombay.php">
+                                                         IIT Bombay Remote Centre
+                                                   </th>
+                                                </tr>
+                                                <tr>
+                                                <th class="course-title2"><a href="iitmadras.php">IIT Madras NPTEL Local Chapter</th>
+                                                <th class="course-title2"><a href="cisco.php">CISCO Networking Academy</th>
+                                                </tr>
+                                                <tr>
+                                                <th class="course-title2"><a href="apssdc.php">APSSDC Skill Development Centre</th>
+                                                <th class="course-title2"><a href="iitbspoken.php">IIT Bombay Spoken Tutorial Lead College</th>
+                                                </tr>
+                                                <!--<tr>
+                                                   <th class="course-title2"><a href="#">Mozilla Campus Club</th>
+                                                   <th class="course-title2"><a href="#">E & ICT Academy - NIT Warangal</th>
+                                                   </tr>
+                                                   <tr>
+                                                   <th class="course-title2"><a href="#">Cambridge British English Course</th>
+                                                   <th class="course-title2"><a href="#">National Cyber Security Resource Centre</th>
+                                                   </tr>
+                                                   <tr>
+                                                   <th class="course-title2"><a href="#">NASSCOM Skill Development Centre</th>
+                                                   <th class="course-title2"><a href="#">National Instruments Lab</th>
+                                                   </tr>
+                                                   -->
+                                                <tr>
+                                                <th class="course-title2"><a href="dassault.php">Dassault Systems Lab</th>
+                                                <th class="course-title"><a href="idealab.php">AICTE IDEA Lab</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="edc.php">EDC Cell</a></th>
+                                                   <th class="course-title2"><a href="msme.php">MSME</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="iic.php">MIC IIC</a></th>
+                                                   <th class="course-title2"><a href="ipr.php">IPR Cell</a></th>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </section>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-b">
+                                    <section>
+                                       <article>
+                                       <div class="table-responsive">
+                                          <table class="table table-hover course-list-table">
+                                             <tbody>
+                                                <tr>
+                                                   <th class="course-title"><a href="wetrc.php">Water and Environment Technology (WET) Research Centre</a></th>
+                                                   <th class="course-title"><a href="centre_geo.php">Geospatial Information Centre (GIC)</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="kollerulic.php">Kolleru Lake Information Centre (KLIC)</a></th>
+                                                   <!-- <th class="course-title"><a href="centre_delta.php">Delta Research and Extension Centre (DREC)</a></th>
+                                                      </tr>
+                                                      
+                                                      <tr>
+                                                          <th class="course-title"><a href="centre_archeology.php">Centre For Archeology Technology and Cultural Heritage (CATCH)</a></th>
+                                                          <th class="course-title"><a href="centre_space.php">Space Technology Research Centre (STRC)</a></th>
+                                                      </tr>
+                                                      
+                                                      <tr>
+                                                          -->
+                                                   <th class="course-title"><a href="centre_gtete.php">Centre for Research in Geotechnical Engineering and Transportation Engineering (CRGETE)</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="ccse.php">Center for Clean and Sustainable Environment (CCSE)</a></th>
+                                                   <!-- <th class="course-title"><a href="centre_shree.php">Sustainable Habitat and Renewable Energy Engineering Centre (SHREE)</a></th> -->
+                                                   <th class="course-title"><a href="centre_technology.php">Technology Centre</a></th>
+                                                </tr>
+                                                <th class="course-title"><a href="centre_bioinformatics.php">Centre for Bioinformatics Research(CBR)</a></th>
+                                                <th class="course-title"><a href="centre_knowledge.php">Centre for Knowledge of Life (CKOL)</a></th>
+                                                <tr>
+                                                   <th class="course-title"><a href="centre_ccdp">Centre for Collaborative Product  Development (CCPD)</a></th>
+                                                   <th class="course-title"><a href="centre_metal.php">Centre for Metal Matrix Composites (CMMC)</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="centre_nrc.php">Nanotechnology Research Centre (NRC)</a></th>
+                                                   <th class="course-title"><a href="centre_vlsi.php">Centre of Excellence in VLSI Design</a></th>
+                                                </tr>
+                                                <tr>
+                                                   <th class="course-title"><a href="centre_biodiesels.php">Centre for Testing of Biodiesels</a></th>
+                                                   <th class="course-title"><a href="centre_aiml.php">Centre of Excellence in Artificial Intelligence and Machine Learning</a></th>
+                                                </tr>
+                                             </tbody>
+                                             <tfoot>
+                                                <!--                             <tr>
+                                                   <th colspan='2' align='right'><a href="" class="read-more stick-to-bottom">Complete List of Centres of Excellence</a></th>
+                                                   </tr>
+                                                   -->                            
+                                             </tfoot>
+                                          </table>
+                                       </div>
+                                    </section>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-c">
+                                    <section>
+                                       <article>
+                                          <div class="table-responsive">
+                                             <table class="table table-hover course-list-table">
+                                                <tbody>
+                                                   <tr>
+                                                      <th class="course-title"><a href="civil.php">Department of Civil Engineering (CE)</a></th>
+                                                   </tr>
+                                                   <tr>
+                                                      <th class="course-title"><a href="csbs.php">Department of Computer Science &amp; Engineering (CSE)</a></th>
+                                                   </tr>
+                                                   <tr>
+                                                      <th class="course-title"><a href="ece.php">Department of Electronics &amp; Communications Engineering (ECE)</a></th>
+                                                   </tr>
+                                                   <tr>
+                                                      <th class="course-title"><a href="eee.php">Department of Electrical & Electronics Engineering (EEE)</a></th>
+                                                   </tr>
+                                                   <tr>
+                                                      <th class="course-title"><a href="it.php">Department of Information Technology (IT)</a></th>
+                                                   </tr>
+                                                   <tr>
+                                                      <th class="course-title"><a href="mech.php">Department of Mechanical Engieering (ME)</a></th>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                    </section>
+                                 </div>
+                                 <!--<div class="tab-pane fade" id="tab-d">
+                                    <strong>Tab D content</strong>
+                                    </div>-->
+                              </div>
+                              <!-- /Tab panes -->
+                           </section>
+                           <!-- /#course-tabs -->
+                           </article>
+                        </div>
+                     </section>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                     <section id="newsletter">
+                        <header>
+                           <h2>Campus Virtual Tour</h2>
+                        </header>
+                        <div class="section-content">
+                           <center>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sin!4v1450773916697!6m8!1m7!1sVRZD66Mn6_kAAAQvOZt-dg!2m2!1d16.54317458557342!2d81.4963815169823!3f7.378257193743614!4f6.129360768543123!5f0.7820865974627469" frameborder="2" style="border:1" width='100%' height='300px' allowfullscreen></iframe>
+                           </center>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      <!-- end Page Content -->
+      <!-- Footer -->
+      <footer id="page-footer">
+         <section id="footer-top">
+            <div class="container">
+               <div class="footer-inner">
+                  <div class="footer-social">
+                     <figure>Follow us:</figure>
+                     <div class="icons"><a href="https://www.facebook.com/SRKRECOFFICIAL" target='_new'><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/srkr_engineering_college" target='_new'><i class="fa fa-instagram"></i></a><a href="https://twitter.com/SRKR_EC" target='_new'><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/channel/UCW7vjllBR9k_zSAYBzh9Iiw" target='_new'><i class="fa fa-youtube-play"></i></a></div>
+                     <!-- /.icons -->
+                  </div>
+                  <!-- /.social -->
+                  <!--			     <div class="search pull-right">
+                     <div class="input-group">
+                         <input type="text" class="form-control" placeholder="Search">
+                     <span class="input-group-btn">
+                         <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                     </span>
+                     </div>
+                     </div>
+                     </div><!-- /.footer-inner -->
+               </div>
+               <!-- /.container -->
+         </section>
+         <!-- /#footer-top -->
+         <section id="footer-content">
+         <div class="container">
+         <div class="row">
+         <div class="col-md-3 col-sm-3">
+         <aside>
+         <header><h4>About SRKR</h4></header>
+         <p align='justify'>Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants. Being one of the premier and well-established technical institutions of the country, it continues to render service to the nation and the world at large with its alumni holding highly prestigious positions and making substantial contribution. 
+         </p>
+         <div>
+         <a href="college_profile.php" class="read-more">View More</a>
+         </div>
+         </aside>
+         </div><!-- /.col-md-3 -->
+         <div class="col-md-3 col-sm-3">
+         <aside>
+         <header><h4>Important Links</h4></header>
+         <ul class="list-links">
+         <!-- <li><a href="faculty.php">Faculty List</a></li> -->
+         <li><a href="infrastructure.php">Infrastructure</a></li>
+         <li><a href="http://www.icredify.com/degreeverify/srkrec" target='_new'>Education Verification</a></li>
+         <li><a href="departments.php">Departments</a></li>
+         <li><a href="web_mail.php">Web-Mail</a></li>
+         <!--<li><a href="calendar.php">Events Calendar</a></li>-->
+         <li><a href="grievance/index.php" target='_new'>Online Grievance</a></li> 
+         <!-- <li><a href="wec/index.html" target='_new'>Women Empowerment Cell</a></li> -->
+         <li><a href="files/RTI_Declaration.pdf" target='_new'>RTI Declaration</a></li>
+         </ul>
+         </aside>
+         </aside>
+         </div><!-- /.col-md-3 -->
+         <div class="col-md-3 col-sm-3">
+         <aside>
+         <header><h4>Downloads</h4></header>
+         <ul class="list-links">
+         <li><a href="ugc.php">UGC Undertaking</a></li>
+         <li><a href="audit.php">Audited Statements</a></li>
+         <li><a href="statutes.php">Statutes</a></li>
+         <li><a href="aqar.php">AQAR</a></li>
+         <li><a href="strategic_plan.php">Strategic Plan &amp; Deployment</a></li>
+         <li><a href="">AICTE Feedback</a></li>
+         </ul>
+         </aside>
+         </div><!-- /.col-md-3 -->
+         <div class="col-md-3 col-sm-3">
+         <aside>
+         <header><h4>Contact Us</h4></header>
+         <address>
+         <strong>Sagi Rama Krishnam Raju (SRKR) Engineering College</strong>
+         <br>
+         <span>(Autonomous)</span>
+         <br><br>
+         <span>SRKR Marg, China Amiram, </span>
+         <br>
+         <span>Bhimavaram, A.P, India - 534204</span>
+         <br>
+         <abbr title="Telephone">Telephone:</abbr> +91 (8816) 223332
+         <br>
+         <abbr title="Telephone">Mobile:</abbr> +91 9848823332<br>
+         <abbr title="Email">Email:</abbr> <a href="#">principal@srkrec.ac.in</a>
+         </address>
+         <img src="assets/img/logo-white.png">
+         </aside>
+         </div><!-- /.col-md-3 -->
+         </div><!-- /.row -->
+         </div><!-- /.container -->
+         <div class="background"><img src="assets/img/background-city.png" class="" alt=""></div>
+         </section><!-- /#footer-content -->
+         <section id="footer-bottom">
+         <div class="container">
+         <div class="footer-inner">
+         <div class="copyright"><a href='web_team.php'><b style='color:yellow;'>WEB DEVELOPMENT TEAM</b></a><br>© 2022 | All Rights Reserved | SRKR Engineering College, Bhimavaram.</div>
+         <!-- /.copyright -->
+         </div><!-- /.footer-inner -->
+         </div><!-- /.container -->
+         </section><!-- /#footer-bottom -->
+      </footer>
+      <!-- end Footer -->
+      </div>
+      <!-- end Wrapper -->
+      <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/selectize.min.js"></script>
+      <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+      <script type="text/javascript" src="assets/js/jQuery.equalHeights.js"></script>
+      <script type="text/javascript" src="assets/js/icheck.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+      <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+      <script type="text/javascript" src="assets/js/custom.js"></script>
+      <script>
+         var a = 0;
+         $(window).scroll(function() {
+         
+           var oTop = $('#counter').offset().top - window.innerHeight;
+           if (a == 0 && $(window).scrollTop() > oTop) {
+             $('.counter-value').each(function() {
+               var $this = $(this),
+                 countTo = $this.attr('data-count');
+               $({
+                 countNum: $this.text()
+               }).animate({
+                   countNum: countTo
+                 },
+         
+                 {
+         
+                   duration: 2000,
+                   easing: 'swing',
+                   step: function() {
+                     $this.text(Math.floor(this.countNum));
+                   },
+                   complete: function() {
+                     $this.text(this.countNum);
+                     //alert('finished');
+                   }
+         
+                 });
+             });
+             a = 1;
+           }
+         
+         });
+         	
+      </script>
+      <script src="assets/js/newsTicker.js"></script> 
+      <script>
+         var multilines = $('#multilines .newsticker').newsTicker({
+             row_height: 130,
+             speed: 400,
+             prevButton: $('#multilines .prev-button'),
+             nextButton: $('#multilines .next-button'),
+             stopButton: $('#multilines .stop-button'),
+             startButton: $('#multilines .start-button'),
+         });
+         
+         
+         //with this first line we're saying: "when the page loads (document is ready) run the following script"
+         $(document).ready(function () {
+         //select the POPUP FRAME and show it
+         $("#popup").hide().fadeIn(1000);
+         
+         //close the POPUP if the button with id="close" is clicked
+         $("#close").on("click", function (e) {
+         e.preventDefault();
+         $("#popup").fadeOut(1000);
+         });
+         });
+         
+         
+      </script>
+   </body>
+   <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sg2plmcpnl492402'},{'dcenter':'sg2'},{'cp_id':'8721005'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
+</html>

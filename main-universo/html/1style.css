@@ -1,0 +1,182 @@
+/* Reset and Font Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between; /* Space sections evenly */
+}
+
+/* Announcements Section */
+.announcements {
+    flex: 1;
+    background: #ffffff; /* White background for clean look */
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    overflow: hidden;
+    position: relative;
+    color: #ffffff; /* White text for contrast */
+}
+
+.announcements-header {
+    background-color: #152c52; /* Deep blue header */
+    color: #fcfcfc; /* White text for header */
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3rem; /* Slightly larger font size */
+    letter-spacing: 1px; /* Letter spacing for modern style */
+    
+    text-transform: uppercase; /* Professional uppercase header */
+}
+
+.announcements-content {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 15px; /* Padding for better layout */
+}
+
+.announcement-marquee {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-vertical 10s linear infinite;
+    gap: 10px; /* Space between announcement items */
+}
+
+.announcement-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for contrast */
+    padding: 10px 15px;
+   
+    font-size: 0.9rem; /* Readable font size */
+    line-height: 1.2; /* Line height for better readability */
+    color: #152c52; /* Dark blue text for readability */
+    font-weight: 500; /* Medium font weight for elegance */
+    white-space: pre-line; /* Respect line breaks in text */
+    border-bottom: 0.7px solid #152c52; /* Add a thin line below each announcement */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Remove the bottom border for the last item */
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover effect for announcement items */
+.announcement-item:hover {
+    
+    transform: scale(1.02); /* Slight zoom effect */
+    
+}
+
+/* Vertical Scrolling Animation */
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Spotlight Section */
+.spotlight {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.spotlight-header {
+    background-color: #3949ab;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.spotlight-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Achievements Section */
+.achievements {
+    flex: 1;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 300px; /* Section height */
+    overflow: hidden; /* Hide overflow outside section */
+    position: relative;
+}
+
+/* Marquee Container */
+.achievement-marquee {
+    display: flex; /* Flex for horizontal layout */
+    align-items: center; /* Center cards vertically */
+    animation: scroll-horizontal 15s linear infinite; /* Smooth horizontal scrolling */
+    gap: 20px; /* Spacing between cards */
+    width: 100%; /* Ensure full-width scrolling */
+}
+
+/* Individual Achievement Cards */
+.achievement-item {
+    flex: 0 0 250px; /* Fixed width for each card */
+    height: 180px; /* Fixed height for each card */
+    background: linear-gradient(135deg, #142C52, #2B4A7D); /* Gradient background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    display: flex; /* Flexbox for card content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-weight: bold; /* Bold typography */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 1.1rem; /* Readable text size */
+   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    padding: 10px; /* Add padding for better text spacing */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+}
+
+/* Hover Effect on Cards */
+.achievement-item:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Horizontal Scrolling Animation */
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Fix Marquee Animation on Hover */
+.achievement-marquee:hover {
+    animation-play-state: running; /* Keep animation running */
+}
